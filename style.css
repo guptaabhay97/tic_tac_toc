@@ -1,0 +1,111 @@
+*{
+    margin: 0px 0px;
+    padding: 0px 0px;
+}
+
+body{
+    background-color: rgba(6, 166, 86, 0.384);
+    position: relative;
+    
+}
+::selection{
+    color: black;
+}
+.main{
+    background-color:  rgb(22, 13, 147);
+    height: 90vh;
+    width: 600px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 10%);
+}
+.main span{
+    color: rgb(255, 255, 255);
+    font-size: 4rem;    
+    text-align: center;
+    font-weight: 500;
+    position: absolute;
+    top: 3%;
+    left: 50%;
+    transform: translate(-50%);
+    text-shadow: 2px 2px 5px rgb(255, 255, 255);
+}
+.container{
+    /* background-color: aquamarine; */
+    height: 400px;
+    width: 400px;
+    display: grid;
+    grid-template-columns:repeat(3, 150px) ;
+    grid-template-rows: repeat(3,130px);
+    position: absolute;
+    cursor: pointer;
+    top:17%;
+    left: 13%;
+    /* transform: translate(7%); */
+   
+
+}
+.box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 5px solid salmon;
+    color: white;
+    font-size: 160px;
+    font-family: 'Courier New', Courier, monospace;
+    &:hover{
+        background-color: gray;
+    }
+}
+
+.bt{
+    border-top:0px;
+}
+
+.bb{
+    border-bottom:0px;
+}
+
+.br{
+    border-right:0px;
+}
+
+.bl{
+    border-left:0px;
+}
+
+button{
+    height: 50px;
+    width: 100px;
+    position: absolute;
+    top: 90%;
+    left: 42%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    font-size: 25px;
+    font-weight: bold;
+    background-color: aquamarine;
+    color: white;
+    border: 2px solid seashell;
+    border-radius: 10px;
+    transform: scale(1);
+    transition: ease-in-out all 0.5s ;
+
+    &:hover{
+        background-color: green;
+        transform: scale(1.2);
+        text-shadow: 1px 2px 5px red;
+    }
+
+}
+
+span.scoreBoard{
+    background-color: transparent;
+    color:white;
+    top: 83%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+
+}
